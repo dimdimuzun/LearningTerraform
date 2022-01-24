@@ -4,7 +4,7 @@
 *.tfstate.lock.info
 *.terraform.lock.hcl
 *.terraform
-**/.terraform/*
+**/.terraform/**
 # logs
 *.log
 
