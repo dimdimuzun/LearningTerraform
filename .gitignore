@@ -10,6 +10,7 @@
 
 # Directories
 .terraform/
+./.terraform/*
 #.vagrant/
 
 # SSH Keys
