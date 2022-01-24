@@ -4,7 +4,9 @@
 *.tfstate.lock.info
 *.terraform.lock.hcl
 *.terraform
-**/.terraform/**
+*terraform*
+
+**/.terraform/*
 # logs
 *.log
 
@@ -44,3 +46,35 @@
 
 # Sentinel runtime directory
 #.sentinel
+
+# From Alex .gitignore file
+
+# Compiled files
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+.DS_Store
+.vscode
+.terraform.lock.hcl
+terraform.tfvars
+secrets.hcl
+secret.tfvars
+
+# Module directory
+.terraform/
+.terragrunt-cache/
+
+lib .\roteros.dll loaded
+*.py[cod]
+__pycache__
+.pytest_cache/
+*.egg-info
+pip-wheel-metadata
+.env
+.venv
+
+tags
+*~
+*.sw[op]
+.vscode
+.idea
