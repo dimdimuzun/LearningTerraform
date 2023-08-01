@@ -53,18 +53,23 @@ Overall, this Terraform configuration demonstrates how to use reusable modules t
 
 ## Terraform AWS Task2
 
-In order to complete this  task for the first you should develop two files. <br>
+In order to complete this task for the first you should develop two files. <br>
 *First* one: `outputs.tf` for module *ec2* located in *"./modules/ec2"* with following *outputs*: <br>
-`*ec2_ami*` <br>
-`*ec2_public_ip*` <br>
-`*ec2_type*` <br>
+`ec2_ami` <br>
+`ec2_public_ip` <br>
+`ec2_type` <br>
 *Second* one: `outputs.tf` for root directory *main.tf*  with following *outputs*: <br>
-`*ec2_ami*` <br>
-`*ec2_public_ip*` <br>
-`*ec2_type*` <br>
-`*vpc_id*` <br>
-`*subnet_id*` <br>
-`*security_group_ids*` <br>
+`ec2_ami` <br>
+`ec2_public_ip` <br>
+`ec2_type` <br>
+`vpc_id` <br>
+`subnet_id` <br>
+`security_group_ids` <br>
+<br>
+After compleeting previous part you should deploy your infrastructure into AWS using `terraform apply` (all created resources are in FreeTier). <br>
+Next step - run `terraform output > result` (taking into account, that your infrastructure still alive). <br>
+Finally, run `terraform destroy` and upload your `result` file to check <br>
+
 
 
 
