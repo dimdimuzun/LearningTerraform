@@ -50,3 +50,21 @@ This Terraform configuration defines an infrastructure deployment that creates v
    This block uses the `ec2` module defined in the `./modules/ec2` directory. The module is responsible for creating an EC2 instance within the public subnet. It requires information about the subnet and security groups created by the `subnet` and `sg` modules. The module likely defines configurations like instance type, AMI, and any other necessary settings for the EC2 instance.
 
 Overall, this Terraform configuration demonstrates how to use reusable modules to define an AWS infrastructure with a VPC, subnets, security groups, and an EC2 instance. Each module is responsible for creating specific resources, and the output variables from one module are passed as input variables to other modules to establish dependencies and relationships between the resources.
+
+## Terraform AWS Task2
+
+In order to complete this  task for the first you should develop two files. <br>
+*First* one: `outputs.tf` for module *ec2* located in *"./modules/ec2"* with following *outputs*: <br>
+`*ec2_ami*` <br>
+`*ec2_public_ip*` <br>
+`*ec2_type*` <br>
+*Second* one: `outputs.tf` for root directory *main.tf*  with following *outputs*: <br>
+`*ec2_ami*` <br>
+`*ec2_public_ip*` <br>
+`*ec2_type*` <br>
+`*vpc_id*` <br>
+`*subnet_id*` <br>
+`*security_group_ids*` <br>
+
+
+
