@@ -1,6 +1,6 @@
-## Simple flat modules usage example
+## Creating AWS resources using Terraform flat modules
 
-This Terraform configuration defines an infrastructure deployment that creates various AWS resources using reusable modules. Let's break down the code section by section:
+This Terraform configuration describes an infrastructure deployment that creates various AWS resources using reusable modules. Let's break down the code section by section:
 
 1. **Provider Block**:
    ```
